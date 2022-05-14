@@ -1,4 +1,4 @@
-body {
+body header {
     background-size: cover;
     background-image: fixed;
     background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("./assets/background.jpg");
@@ -83,4 +83,29 @@ nav ul li {
 
 .buttons #register:hover {
     background-color: rgb(60, 12, 12);
+}
+
+.about {
+    display: flex;
+}
+
+.about-section {
+    padding: 50px 100px;
+    text-align: left;
+    width: 40%;
+}
+
+.column {
+    float: left;
+    width: 30%;
+    padding: 50px 8px;
+}
+
+.card {
+    margin: 8px;
+}
+
+.about .card img {
+    border-radius: 50%;
+    border: 5px solid #a6abad;
 }
