@@ -1,0 +1,39 @@
+body {
+    background-size: cover;
+    background-image: fixed;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),url("./assets/background.jpg");
+}
+
+nav,
+footer {
+    width: 100%;
+    display: flex;
+    font-size: 17px;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 2px;
+}
+
+.topNav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    border-bottom: 3px solid transparent;
+}
+
+.topNav a:hover {
+    border-bottom: 3px solid white;
+}
+
+.topNav a.active {
+    border-bottom: 3px solid white;
+}
