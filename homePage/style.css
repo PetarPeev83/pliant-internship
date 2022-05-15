@@ -6,8 +6,7 @@ header,
     color: white
 }
 
-nav,
-footer {
+nav {
     width: 100%;
     display: flex;
     font-size: 17px;
@@ -129,7 +128,79 @@ nav ul li {
 .row {
     display: contents;
 }
+
 #slide {
     text-align: center;
     padding: 20px;
+}
+
+footer {
+    background: #2A2A2A;
+    color: #646464;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+
+footer .footer {
+    width: 30%;
+    margin: 20px;
+}
+
+#links {
+    display: flex;
+    border-right: 2px solid grey;
+    border-left: 2px solid grey;
+}
+
+#links ul {
+    margin: auto;
+    width: 33%;
+}
+
+#links a:hover {
+    color: aliceblue;
+}
+
+#links a {
+    color: #646464;
+}
+
+#designInfo {
+    text-align: center;
+    margin: auto;
+    width: 50%;
+}
+
+#contactInfo {
+    text-align: left;
+    margin: auto;
+    width: 50%;
+}
+
+.icon {
+    position: relative;
+    width: 15px;
+    padding-right: 5px;
+}
+
+#slide a {
+    color: aliceblue;
+}
+
+#slide a:link {
+    text-decoration: none;
+}
+
+#slide a:visited {
+    text-decoration: none;
+}
+
+#slide a:hover {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#slide a:active {
+    text-decoration: none;
 }

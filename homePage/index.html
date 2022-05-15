@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css" />
     <title>pliant.io</title>
+    <script src="./app.js"></script>
 </head>
 
 <body>
@@ -84,39 +85,32 @@
     </div>
 
     <div id="slide">
-        <!-- <div id="firstSlide">
-            <p>"Lorem ipsum dolor sit amet consectetur, adipisicing elit."</p>
-            <p>Jonny Doe | <span style='font-size:20px;'>&#9679; &#9675; &#9675;</span></p>
-        </div>
-        <div id="secondSlide">
-            <p>" Dolorem, minima explicabo doloribus quasi exercitationem cum culpa? Veniam at ipsa officiis accusantium
-                iusto consequatur. Magni."</p>
-            <p>John Doe | <span style='font-size:20px;'> &#9675; &#9679; &#9675;</span></p>
-        </div>
-        <div id="thirdSlide">
-            <p>"Incidunt eaque velit illum excepturi reprehenderit."</p>
-            <p>Johnathan Doe | <span style='font-size:20px;'> &#9675; &#9675; &#9679;</span></p>
-        </div> -->
-        <script>
+        <!-- <script>
 
             let elementsToSlide = [`<div id="firstSlide">
             <p>"Lorem ipsum dolor sit amet consectetur, adipisicing elit."</p>
-            <p>Jonny Doe | <span style='font-size:20px;'>&#9679; &#9675; &#9675;</span></p>
-        </div>`,
+            <p>Jonny Doe | <span style='font-size:20px;'>
+                <a onclick="showSelectedParagraph(0)">&#9679;</a>
+                <a onclick="showSelectedParagraph(1)">&#9675;</a>
+                <a onclick="showSelectedParagraph(2)">&#9675;</a></span></p></div>`,
                 `<div id="secondSlide">
             <p>" Dolorem, minima explicabo doloribus quasi exercitationem cum culpa? Veniam at ipsa officiis accusantium
                 iusto consequatur. Magni."</p>
-            <p>John Doe | <span style='font-size:20px;'> &#9675; &#9679; &#9675;</span></p>
-        </div>`,
+            <p>John Doe | <span style='font-size:20px;'> 
+                <a onclick="showSelectedParagraph(0)">&#9675;</a> 
+                <a onclick="showSelectedParagraph(1)">&#9679;</a> 
+                <a onclick="showSelectedParagraph(2)">&#9675;</a></span></p></div>`,
                 `<div id="thirdSlide">
             <p>"Incidunt eaque velit illum excepturi reprehenderit."</p>
-            <p>Johnathan Doe | <span style='font-size:20px;'> &#9675; &#9675; &#9679;</span></p>
-        </div>`]
+            <p>Johnathan Doe | <span style='font-size:20px;'>
+                 <a onclick="showSelectedParagraph(0)">&#9675;</a> 
+                 <a onclick="showSelectedParagraph(1)">&#9675;</a> 
+                 <a onclick="showSelectedParagraph(2)">&#9679;</a></span></p> </div>`]
 
             const slideDiv = document.getElementById('slide');
             slideDiv.innerHTML = elementsToSlide[0];
 
-            function replacingDivElements() {
+            function replacingElements() {
                 if (slideDiv.children[0].id == "firstSlide") {
                     slideDiv.innerHTML = elementsToSlide[1];
                 } else if (slideDiv.children[0].id == "secondSlide") {
@@ -129,19 +123,52 @@
             };
 
             function sliding() {
-                replacingDivElements();
+                replacingElements();
                 setTimeout(() => {
                     sliding();
                 }, 5000);
             };
             sliding();
-        </script>
-    </div>
 
+            function showSelectedParagraph(indexP) {
+                slideDiv.innerHTML = elementsToSlide[indexP];
+            };
+
+        </script> -->
+    </div>
 </body>
 
 <footer>
+    <div class="footer">
+        <div id="designInfo">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+            Odio iste itaque illo fugiat tempore ea a numquam est consequatur sit cum...
+        </div>
+    </div>
 
+    <div class="footer" id="links">
+        <ul>
+            <li><a href="">Support</a></li>
+            <li><a href="">Account</a></li>
+            <li><a href="">Product Catalog</a></li>
+            <li><a href="">Shortcodes</a></li>
+        </ul>
+        <ul>
+            <li><a href="">Support</a></li>
+            <li><a href="">Account</a></li>
+            <li><a href="">Product Catalog</a></li>
+            <li><a href="">Shortcodes</a></li>
+        </ul>
+    </div>
+
+    <div class="footer">
+        <div id="contactInfo">
+            <p><img class="icon" src="./assets/phone.png">0000-0000-0000</p>
+            <p><img class="icon" src="./assets/mail.png">infoteam@ghosthost.com</p>
+            <p>Lorem Ipsum Street, Lorem Avenue, Lorem Ipsum</p>
+        </div>
+    </div>
+    <script>solve()</script>
 </footer>
 
 </html>
