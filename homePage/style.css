@@ -87,7 +87,8 @@ nav ul li {
     cursor: pointer;
 }
 
-.about {
+.about,
+.utility {
     display: flex;
 }
 
@@ -170,6 +171,7 @@ footer .footer {
     text-align: center;
     margin: auto;
     width: 50%;
+    margin-top: 25px;
 }
 
 #contactInfo {
@@ -203,4 +205,8 @@ footer .footer {
 
 #slide a:active {
     text-decoration: none;
+}
+
+.utility img {
+    max-width: 40px;
 }
